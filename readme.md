@@ -5,6 +5,18 @@ This service provides a... And provides a simplified and abstracted RESTful API 
 
 ## Getting Started
 
+### Project structure
+
+```markdown
+.
+├── app                  # "app" is a Python package
+│   ├── __init__.py      # this file makes "app" a "Python package"
+│   ├── main.py          # "main" module, e.g. import app.main
+│   └── routers          # "routers" is a "Python subpackage"
+│      ├── __init__.py  # makes "routers" a "Python subpackage"
+│      └── users.py     # "users" submodule, e.g. import app.routers.users
+```
+
 ### Usage
 
 1. Install python packages used for the service
