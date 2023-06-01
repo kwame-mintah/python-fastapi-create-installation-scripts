@@ -1,6 +1,6 @@
 # UoW Backend App
 
-This service provides a... And provides a simplified and abstracted RESTful API that can be easily consumed by the 
+This service provides a... And provides a simplified and abstracted RESTful API that can be easily consumed by the
 [UoW Frontend App]().
 
 ## Getting Started
@@ -32,4 +32,3 @@ This service provides a... And provides a simplified and abstracted RESTful API 
 ### Tests
 
 Unit tests are located in `/tests` directory.
-

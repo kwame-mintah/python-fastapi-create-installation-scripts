@@ -11,9 +11,7 @@ frontend_origin = os.environ.get("FRONTEND_SERVICE_URL")
 app = FastAPI()
 app.include_router(users.router)
 
-origins = [
-    frontend_origin
-]
+origins = [frontend_origin]
 
 app.add_middleware(
     CORSMiddleware,
