@@ -1,4 +1,7 @@
+from typing import Type
+
 from fastapi import APIRouter, Depends
+from starlette.responses import FileResponse
 
 from app.services.projects_service import ProjectsService
 
@@ -21,3 +24,10 @@ async def get_project_details(
     identifier: str, service: ProjectsService = Depends(get_project_service())
 ) -> dict:
     return service.return_stub_data_id(identifier)
+
+
+@router.post("/{identifier}/details/{os}")
+async def download_project_script(
+    identifier: str, os: str, service: ProjectsService = Depends(get_project_service())
+) -> FileResponse:
+    return service.return_stub_data_software_packages(identifier, os)
