@@ -11,8 +11,25 @@ def remove_existing_file(name):
 class ProjectsService:
     stub_data = {
         "projects": [
-            {"projectId": "bxsHg", "projectName": "Cartoon Network"},
-            {"projectId": "fPvAb", "projectName": "Jetix"},
+            {
+                "projectId": "bxsHg",
+                "projectName": "Cartoon Network",
+                "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur"
+                "unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate"
+                "numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.",
+                "startDate": 1641562241,
+                "endDate": 1688733111,
+            },
+            {
+                "projectId": "fPvAb",
+                "projectName": "Jetix",
+                "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada"
+                "lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet,"
+                "consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit"
+                "leo lobortis eget.",
+                "startDate": 1673098241,
+                "endDate": 1688736654,
+            },
         ]
     }
 
