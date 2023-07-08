@@ -75,7 +75,7 @@ class ProjectsService:
                         + "\n"
                     )
                     f.close()
-            return FileResponse(shell, filename=shell)
+            return FileResponse(path=shell, filename=shell)
         elif system == "winOS":
             # Any package name ending with .config is considered a 'packages.config' file.
             # Please see https://ch0.co/packages_config
@@ -91,7 +91,7 @@ class ProjectsService:
                         + "\n"
                     )
                     f.close()
-            return FileResponse(config, filename=config)
+            return FileResponse(path=config, filename=config)
         elif system == "linux":
             # sudo apt-get install package1 package2 package3 -y
             shell = name + ".sh"
@@ -102,7 +102,7 @@ class ProjectsService:
                         "apt-get install " + package["name"] + package["version"] + "\n"
                     )
                     f.close()
-            return FileResponse(shell, filename=shell)
+            return FileResponse(path=shell, filename=shell)
         else:
             raise HTTPException(
                 status_code=400, detail=f"Unable to installation script for {os}"

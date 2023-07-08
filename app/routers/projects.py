@@ -1,7 +1,5 @@
-from typing import Type
-
 from fastapi import APIRouter, Depends
-from starlette.responses import FileResponse
+from fastapi.responses import FileResponse
 
 from app.services.projects_service import ProjectsService
 
