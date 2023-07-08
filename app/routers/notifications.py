@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 
 from app.services.notifications_service import NotificationService
 
-router = APIRouter(prefix="/notification", tags=["notification"])
+router = APIRouter(prefix="/notifications", tags=["notification"])
 
 
 def get_notification_service():
