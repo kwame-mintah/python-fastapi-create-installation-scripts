@@ -1,7 +1,7 @@
 # UoW Backend App
 
-This service provides a... And provides a simplified and abstracted RESTful API that can be easily consumed by the
-[UoW Frontend App]().
+This project provides a way to download installation scripts for your projects. This will create a shell script (`.sh`) or a configuration file (`.config`) to be run on your machine.
+This application provides a simplified and abstracted RESTful API that can be easily consumed by the [UoW Frontend App](https://dev.azure.com/k-space/uow/_git/uow-frontend-app).
 
 ## Getting Started
 
@@ -14,7 +14,11 @@ This service provides a... And provides a simplified and abstracted RESTful API 
 │   ├── main.py          # "main" module, e.g. import app.main
 │   └── routers          # "routers" is a "Python subpackage"
 │      ├── __init__.py  # makes "routers" a "Python subpackage"
-│      └── users.py     # "users" submodule, e.g. import app.routers.users
+│      └── dashboard.py     # "dashboard" submodule, e.g. import app.routers.dashboard
+│      └── notifications.py     # "notifications" submodule, e.g. import app.routers.notifications
+│      └── projects.py     # "projects" submodule, e.g. import app.routers.projects
+│      └── setting.py     # "setting" submodule, e.g. import app.routers.setting
+│      └── user.py     # "user" submodule, e.g. import app.routers.user
 ```
 
 ### Usage
