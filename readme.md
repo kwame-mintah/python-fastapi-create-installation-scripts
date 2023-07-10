@@ -36,3 +36,19 @@ This application provides a simplified and abstracted RESTful API that can be ea
 ### Tests
 
 Unit tests are located in `/tests` directory.
+
+## Deploy on Azure Web App
+
+The easiest way to deploy the Next.js app is to use the [Azure Web App](https://azure.microsoft.com/en-gb/products/app-service/web/), this project has been configured to
+automatically deploy changes made to the `master` branch to an environment variable, see `/azure-pipeline/azure-pipelines.yml` the following variables are required to be set.
+
+### Pipeline variables
+
+| Variable             | Description                                               | Default value                                               | Required? |
+|----------------------|-----------------------------------------------------------|-------------------------------------------------------------|-----------|
+| azureSubscription    | The Azure Subscription that contains the Azure Web App    | N/A                                                         | Yes       |
+| projectPoolName      | The azure agent pool that the job will run on             | N/A                                                         | Yes       |
+| pythonStartUpCommand | The start-up command to start the next.js web application | gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app | No        |
+| webAppName           | The name of the created Azure Web App                     | N/A                                                         | Yes       |
+
+Checkout [Deploy to App Service using Azure Pipelines](https://learn.microsoft.com/en-us/azure/app-service/deploy-azure-pipelines?tabs=yaml) for more details.
