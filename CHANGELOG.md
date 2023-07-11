@@ -1,3 +1,9 @@
+## v0.2.0 (2023-07-11)
+
+### Feat
+
+- **main**: allow multiple origins via env var
+
 ## v0.1.0 (2023-07-10)
 
 ### Feat
