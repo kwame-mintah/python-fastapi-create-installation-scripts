@@ -5,8 +5,8 @@ This application provides a simplified and abstracted RESTful API that can be ea
 
 > [!NOTE]
 >
-> This repository was created within Azure DevOps and is now being mirrored to this GitHub [repository](https://github.com/kwame-mintah/terraform-azure-aad-web-apps).
-> Source of truth will always be the Azure DevOps [repository](https://dev.azure.com/k-space/uow/_git/uow-infrastructure-terraform). Furthermore, this repository is
+> This repository was created within Azure DevOps and is now being mirrored to this GitHub [repository](https://github.com/kwame-mintah/python-fastapi-create-installation-scripts).
+> Source of truth will always be the Azure DevOps [repository](https://dev.azure.com/k-space/uow/_git/uow-backend-app). Furthermore, this repository is
 > a proof of concept for creating various scripts for MacOS / WinOS and has not been fully implemented so YMMV.
 
 ## Getting Started
