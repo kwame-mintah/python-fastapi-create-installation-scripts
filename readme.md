@@ -1,7 +1,13 @@
 # UoW Backend App
 
-This project provides a way to download installation scripts for your projects. This will create a shell script (`.sh`) or a configuration file (`.config`) to be run on your machine.
-This application provides a simplified and abstracted RESTful API that can be easily consumed by the [UoW Frontend App](https://dev.azure.com/k-space/uow/_git/uow-frontend-app).
+This project provides a way to download installation scripts for your projects. This will create a shell script (`.sh`) or a configuration file ([`.config`](https://docs.chocolatey.org/en-us/choco/commands/install#packages.config)) to be run on your machine.
+This application provides a simplified and abstracted RESTful API that can be easily consumed by the [UoW Frontend App](https://dev.azure.com/k-space/uow/_git/uow-frontend-app)[^1].
+
+> [!NOTE]
+>
+> This repository was created within Azure DevOps and is now being mirrored to this GitHub [repository](https://github.com/kwame-mintah/terraform-azure-aad-web-apps).
+> Source of truth will always be the Azure DevOps [repository](https://dev.azure.com/k-space/uow/_git/uow-infrastructure-terraform). Furthermore, this repository is
+> a proof of concept for creating various scripts for MacOS / WinOS and has not been fully implemented so YMMV.
 
 ## Getting Started
 
@@ -25,7 +31,7 @@ This application provides a simplified and abstracted RESTful API that can be ea
 
 1. Install python packages used for the service
     ```console
-   pip install - requirements.txt
+   pip install -r requirements.txt
     ```
 2. Run the FastAPI server, which will run on port 8000
     ```console
@@ -52,3 +58,5 @@ automatically deploy changes made to the `master` branch to an environment varia
 | webAppName           | The name of the created Azure Web App                     | N/A                                                         | Yes       |
 
 Checkout [Deploy to App Service using Azure Pipelines](https://learn.microsoft.com/en-us/azure/app-service/deploy-azure-pipelines?tabs=yaml) for more details.
+
+[^1]: My Azure DevOps organisation / project is private, NextJS repository is mirrored [here](https://github.com/kwame-mintah/nextjs-project-installation-dashboard) in GitHub.
