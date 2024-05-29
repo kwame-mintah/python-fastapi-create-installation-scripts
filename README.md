@@ -21,7 +21,7 @@ This application provides a simplified and abstracted RESTful API that can be ea
 │   └── routers          # "routers" is a "Python subpackage"
 │      ├── __init__.py  # makes "routers" a "Python subpackage"
 │      └── dashboard.py     # "dashboard" submodule, e.g. import app.routers.dashboard
-│      └── notifications.py     # "notifications" submodule, e.g. import app.routers.notifications
+│      └── notifications.py    # "notifications" submodule, e.g. import app.routers.notifications
 │      └── projects.py     # "projects" submodule, e.g. import app.routers.projects
 │      └── setting.py     # "setting" submodule, e.g. import app.routers.setting
 │      └── user.py     # "user" submodule, e.g. import app.routers.user
