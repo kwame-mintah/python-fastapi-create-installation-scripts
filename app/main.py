@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.routers import dashboard, projects, user, setting, notifications
 
-comma_separated_origins = os.environ.get("ALLOW_CORS_ORIGINS")
+comma_separated_origins = os.environ.get("ALLOW_CORS_ORIGINS", "http://localhost:3000")
 
 app = FastAPI()
 app.include_router(dashboard.router)
