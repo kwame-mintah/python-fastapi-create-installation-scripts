@@ -3,11 +3,29 @@
 This project provides a way to download installation scripts for your projects. This will create a shell script (`.sh`) or a configuration file ([`.config`](https://docs.chocolatey.org/en-us/choco/commands/install#packages.config)) to be run on your machine.
 This application provides a simplified and abstracted RESTful API that can be easily consumed by the [UoW Frontend App](https://dev.azure.com/k-space/uow/_git/uow-frontend-app)[^1].
 
+![](docs/script_swagger_preview.gif)
+
 > [!NOTE]
 >
 > This repository was created within Azure DevOps and is now being mirrored to this GitHub [repository](https://github.com/kwame-mintah/python-fastapi-create-installation-scripts).
 > Source of truth will always be the Azure DevOps [repository](https://dev.azure.com/k-space/uow/_git/uow-backend-app). Furthermore, this repository is
 > a proof of concept for creating various scripts for MacOS / WinOS and has not been fully implemented so YMMV.
+
+## Roadmap
+
+More work needs to be completed for the final version of the application. Below are additional things required for a
+clearer vision of what is envisioned of this application.
+
+### Implement Authentication
+
+Require all API requests to be authenticated via Azure Active Directory (AAD). There is various libraries that offer the
+capability of configuring authentication for AAD. The chosen library, should allow for setting required `scopes` to access
+an endpoint e.g. `scopes=['user']`, if the user does not have this scope a HTTP status of 403 Forbidden will be returned.
+
+### Script(s) to uninstall / remove packages
+
+In the same way a user is able to request a script to be generated, containing all their packages needed for a project,
+another should be provided to remove and uninstall everything. Allowing for fresh installs on new projects etc.
 
 ## Getting Started
 
